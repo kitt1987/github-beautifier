@@ -1,0 +1,29 @@
+{
+  "name": "GitHub Beautifier",
+  "version": "0.9",
+  "description": "Beautify the New GitHub UI",
+  "manifest_version": 2,
+  "icons": {
+    "16": "icon/32.png",
+    "32": "icon/32.png",
+    "48": "icon/64.png",
+    "128": "icon/128.png"
+  },
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  },
+  "permissions": ["declarativeContent", "https://*.github.com/*", "storage"],
+  "page_action": {
+    "default_icon": "icon/32.png",
+    "default_title": "GitHub Beautifier",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.github.com/*"],
+      "run_at": "document_start",
+      "js": ["gb_radius.js", "avatar.js", "window.js"]
+    }
+  ]
+}
