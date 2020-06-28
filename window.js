@@ -14,4 +14,6 @@ window.onload = (event) => {
 			});
 		}
 	});
+
+	alignNavToCenter();	
 };

@@ -11,7 +11,7 @@
   },
   "background": {
     "persistent": false,
-    "scripts": ["background.js"]
+    "page": "bg_wrapper.html"
   },
   "permissions": ["declarativeContent", "https://*.github.com/*", "storage"],
   "page_action": {
@@ -23,7 +23,12 @@
     {
       "matches": ["https://*.github.com/*"],
       "run_at": "document_start",
-      "js": ["gb_radius.js", "avatar.js", "window.js"]
+      "js": [
+        "renderer/radius/content.js",
+        "renderer/avatar/content.js",
+        "window.js",
+        "nav.js"
+      ]
     }
   ]
 }
