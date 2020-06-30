@@ -13,13 +13,13 @@
     "persistent": false,
     "scripts": [
       "decorator/avatar.js",
-      "decorator/nav.js",
+      "decorator/nav/centralizenav.js",
       "decorator/radius.js",
       "config.js",
       "background.js"
     ]
   },
-  "permissions": ["declarativeContent", "storage", "https://*.github.com/*"],
+  "permissions": ["declarativeContent", "storage", "tabs", "*://*.github.com/*"],
   "page_action": {
     "default_icon": "icon/32.png",
     "default_title": "GitHub Beautifier",
@@ -28,13 +28,8 @@
   "content_scripts": [
     {
       "matches": ["https://*.github.com/*"],
-      "run_at": "document_start",
-      "js": [
-        "decorator/avatar.js",
-        "decorator/nav.js",
-        "decorator/radius.js",
-        "config.js",
-        "content.js"
+      "css": [
+        "decorator/nav/content.css"
       ]
     }
   ]

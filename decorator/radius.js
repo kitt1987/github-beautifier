@@ -14,10 +14,13 @@ let Radius = {
 function InitConfigView(globalConf) {
 	document.getElementById('radiusUpdate').checked = globalConf.updateRadius;
 	document.getElementById('radius').value = globalConf.radius;
+	updateRadiusPopupView(globalConf);
+
 	document.getElementById('radiusUpdate').addEventListener('click', (event) => {
 		globalConf.radius = document.getElementById('radius').value;
 		globalConf.updateRadius = event.target.checked
 		chrome.storage.local.set(globalConf);
+		updateRadiusPopupView(globalConf);
 		if (!globalConf.updateRadius) {
 			chrome.tabs.reload();
 			return;
@@ -39,6 +42,17 @@ function InitConfigView(globalConf) {
 	});
 }
 
+function updateRadiusPopupView(globalConf) {
+	if (globalConf.updateRadius) {
+		document.getElementById('disableRadius').style.display = "none";
+		document.getElementById('enableRadius').style.display = "flex";
+		document.getElementById('enableRadius').style.borderRadius = globalConf.radius;
+	} else {
+		document.getElementById('enableRadius').style.display = "none";
+		document.getElementById('disableRadius').style.display = "flex";
+	}
+}
+
 function ConfigView() {
 	return `
 <div class="row">
@@ -48,9 +62,8 @@ function ConfigView() {
 		<input class="textfield" type="text" id="radius" value="3px">
 	</div>
 	<div class="column c2">
-		<div class="button bad column"></div>
-		<p class="text arrow">&rarr;</p>
-		<div class="button good"></div>
+		<div id="disableRadius" class="button bad" style="display: none"></div>
+		<div id="enableRadius" class="button good" style="display: none"></div>
 	</div>
 </div>
 `;
@@ -79,6 +92,12 @@ function ignoreSelector(selector) {
 	}
 
 	return false;
+}
+
+function updateRadius_deprecated(radius) {
+	var sheet = document.createElement('style')
+	sheet.innerHTML = `* { border-radius: ${radius} !important;}`;
+	document.body.appendChild(sheet);
 }
 
 function updateRadius(radius) {

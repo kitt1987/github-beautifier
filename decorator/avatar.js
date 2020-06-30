@@ -12,9 +12,11 @@ let Avatar = {
 
 function InitConfigView(globalConf) {
 	document.getElementById('keepTopRightAvatar').checked = globalConf.keepTopRightAvatar;
+	updateAvatarPopupView(globalConf);
 	document.getElementById('keepTopRightAvatar').addEventListener('click', (event) => {
 		globalConf.keepTopRightAvatar = event.target.checked
 		chrome.storage.local.set(globalConf);
+		updateAvatarPopupView(globalConf);
 		if (!globalConf.keepTopRightAvatar) {
 			chrome.tabs.executeScript({
 		      code: 'updateAvatarStyle("' + globalConf.radius + '");'
@@ -28,6 +30,17 @@ function InitConfigView(globalConf) {
 	});
 }
 
+function updateAvatarPopupView(globalConf) {
+	if (globalConf.keepTopRightAvatar) {
+		document.getElementById('disableAvatar').style.display = "none";
+		document.getElementById('enabbleAvatar').style.display = "flex";
+	} else {
+		document.getElementById('enabbleAvatar').style.display = "none";
+		document.getElementById('disableAvatar').style.display = "flex";
+		document.getElementById('disableAvatar').style.borderRadius = globalConf.radius;
+	}
+}
+
 function ConfigView() {
 	return `
 <div class="row">
@@ -35,10 +48,10 @@ function ConfigView() {
 		<input class="check" type="checkbox" id="keepTopRightAvatar" checked="true">
 		<p class="text column">Keep the top right avatar</p>
 	</div>
-	<div class="column c2">
-		<img width="17" height="17" src="https://avatars2.githubusercontent.com/u/760562?s=60&amp;v=4" style="border-radius: 3px;">
-		<p class="text">&rarr;</p>
-		<img width="17" height="17" src="https://avatars2.githubusercontent.com/u/760562?s=60&amp;v=4" style="border-radius: 50%;">
+	<div class="column c2 avatarBG">
+		<img id="disableAvatar" class="avatar" src="https://avatars2.githubusercontent.com/u/760562?s=60&amp;v=4" style="display: none;">
+		<img id="enabbleAvatar" class="avatar" src="https://avatars2.githubusercontent.com/u/760562?s=60&amp;v=4" style="display: none;">
+		<span class="dropdown-caret"></span>
 	</div>
 </div> 
 `;
@@ -54,8 +67,6 @@ function keepRawAvatarStyle() {
 		console.log("header view not found");
 		return;
 	}
-
-	console.log(header);
 
 	let avatars = header[0].getElementsByClassName('avatar avatar-user')
 	for (let i = 0; i < avatars.length; i++) {

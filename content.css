@@ -1,0 +1,50 @@
+/* all border radius */
+* {
+	border-radius: 3px !important;
+}
+
+/* top right avatar */
+summary>img.avatar-user {
+	border-radius: 50% !important;
+}
+
+/* home page avatar */
+img.avatar-user {
+	border-radius: 3px !important;
+}
+
+/* avatar in timeline */
+a.avatar-user {
+	border-radius: 3px !important;
+}
+
+/* home page status */
+div.user-status-circle-badge-container {
+	margin-bottom: -55px;
+}
+
+/* navbar message indicator */
+span.mail-status {
+	border-radius: 50% !important;
+}
+
+/* home page language indicator */
+span.repo-language-color {
+	border-radius: 50% !important;
+}
+
+/* home page discussion icon */
+span.discussion-item-icon {
+	border-radius: 50% !important;
+}
+
+/* timeline gadge */
+div.TimelineItem-badge {
+	border-radius: 50% !important;
+}
+
+/* navbar */
+ul.UnderlineNav-body {
+    margin-left: auto;
+    margin-right: auto;
+}
