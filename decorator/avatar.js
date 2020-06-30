@@ -42,7 +42,15 @@ function Enable(data) {
 }
 
 function keepRawAvatarStyle() {
-	let avatars = document.getElementsByClassName('avatar avatar-user')
+	let header = document.getElementsByClassName("Header");
+	if (!header || header.length == 0) {
+		console.log("header view not found");
+		return;
+	}
+
+	console.log(header);
+
+	let avatars = header[0].getElementsByClassName('avatar avatar-user')
 	for (let i = 0; i < avatars.length; i++) {
 		let avatar = avatars[i];
 		if (avatar.className.trim() == 'avatar avatar-user') {
@@ -52,7 +60,13 @@ function keepRawAvatarStyle() {
 }
 
 function updateAvatarStyle(radius) {
-	let avatars = document.getElementsByClassName('avatar avatar-user')
+	let header = document.getElementsByClassName("Header");
+	if (!header || header.length == 0) {
+		console.log("header view not found");
+		return;
+	}
+
+	let avatars = header[0].getElementsByClassName('avatar avatar-user')
 	for (let i = 0; i < avatars.length; i++) {
 		let avatar = avatars[i];
 		if (avatar.className.trim() == 'avatar avatar-user') {
