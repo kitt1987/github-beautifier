@@ -11,9 +11,15 @@
   },
   "background": {
     "persistent": false,
-    "scripts": ["background.js"]
+    "scripts": [
+      "decorator/avatar.js",
+      "decorator/nav.js",
+      "decorator/radius.js",
+      "config.js",
+      "background.js"
+    ]
   },
-  "permissions": ["declarativeContent", "https://*.github.com/*", "storage"],
+  "permissions": ["declarativeContent", "storage", "https://*.github.com/*"],
   "page_action": {
     "default_icon": "icon/32.png",
     "default_title": "GitHub Beautifier",
@@ -23,7 +29,13 @@
     {
       "matches": ["https://*.github.com/*"],
       "run_at": "document_start",
-      "js": ["gb_radius.js", "avatar.js", "window.js"]
+      "js": [
+        "decorator/avatar.js",
+        "decorator/nav.js",
+        "decorator/radius.js",
+        "config.js",
+        "content.js"
+      ]
     }
   ]
 }

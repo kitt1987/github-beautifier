@@ -2,10 +2,12 @@
 	<head>
 		<style>
 			html, body {
-				width: 250px;
+				width: 240px;
 				margin: 0px;
 				font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 				font-size: 14px;
+				color: #1b1f23;
+				border-radius: 15px;
 			}
 
 			.container {
@@ -13,7 +15,7 @@
 				flex-direction: column;
 				justify-content: space-between;
 				align-items: stretch;
-				margin: 10px 20px 10px 20px;
+				margin: 5px 15px 5px 15px;
 			}
 
 			.rowcontainer {
@@ -65,25 +67,29 @@
 			.check {
 				margin: 0px;
 			}
+
+			.avatar {
+				height: 40px;
+				width: 40px;
+			}
+
+			.banner {
+				display: flex;
+				justify-content: center;
+				background-color: #24292e;
+				padding-top: 5px;
+			}
 		</style>
 	</head>
 	<body>
-		<div class="container">
-			<div class="row">
-				<input class="check" type="checkbox" id="radiusUpdate" checked="true">
-				<div class="button bad column"></div>
-				<p class="text">&rarr;</p>
-				<div class="button good"></div>
-				<div class="rowcontainer column">
-					<p class="text">, radius:</p>
-					<input class="textfield" type="text" id="radius" value="3px">
-				</div>
-			</div>
-			<div class="row">
-				<input class="check" type="checkbox" id="keepTopRightAvatar" checked="true">
-				<p class="text column">Keep the top right avatar</p>
-			</div>
+		<div class="banner">
+			<img class="avatar" src="icon/banner.png">
 		</div>
+		<div class="container" id="container"></div>
+		<script src="decorator/radius.js"></script>
+		<script src="decorator/avatar.js"></script>
+		<script src="decorator/nav.js"></script>
+		<script src="config.js"></script>
 		<script src="popup.js"></script>
 	</body>
 </html>

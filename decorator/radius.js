@@ -1,10 +1,66 @@
+let Radius = {
+	Name: 'updateRadius',
+	Config: () => {
+		return {
+			radius: "3px",
+			updateRadius: true,
+		};
+	},
+	InitConfigView: InitConfigView,
+	ConfigView: ConfigView,
+	Enable: Enable,
+};
+
+function InitConfigView(globalConf) {
+	document.getElementById('radiusUpdate').checked = globalConf.updateRadius;
+	document.getElementById('radius').value = globalConf.radius;
+	document.getElementById('radiusUpdate').addEventListener('click', (event) => {
+		globalConf.radius = document.getElementById('radius').value;
+		globalConf.updateRadius = event.target.checked
+		chrome.storage.local.set(globalConf);
+		if (!globalConf.updateRadius) {
+			chrome.tabs.reload();
+			return;
+		}
+		
+	  	chrome.tabs.executeScript({
+	      code: 'updateRadius("' + globalConf.radius + '")'
+	    });
+	});
+
+	document.getElementById('radius').addEventListener('change', (event) => {
+		globalConf.radius = event.target.value;
+		chrome.storage.local.set(globalConf);
+		if (globalConf.updateRadius) {
+			chrome.tabs.executeScript({
+		      code: 'updateRadius("' + globalConf.radius + '")'
+		    });
+		}
+	});
+}
+
+function ConfigView() {
+	return `
+<div class="row">
+	<input class="check" type="checkbox" id="radiusUpdate" checked="true">
+	<div class="button bad column"></div>
+	<p class="text">&rarr;</p>
+	<div class="button good"></div>
+	<div class="rowcontainer column">
+		<p class="text">, radius:</p>
+		<input class="textfield" type="text" id="radius" value="3px">
+	</div>
+</div>
+`;
+}
+
+function Enable(data) {
+	updateRadius(data["radius"]);
+}
+
 function isEmptyRadius(radius) {
 	return radius == "" || radius == "0" || radius == "0px"
 }
-
-// .avatar-user 
-
-// FIXME cache the updated
 
 function ignoreSelector(selector) {
 	// FIXME use hashtable here
@@ -35,7 +91,6 @@ function updateRadius(radius) {
 
 			if (!isEmptyRadius(rule.style.borderRadius)) {
 				if (rule.style.borderRadius.includes(' ')) {
-					// console.log(rule.cssText);
 					continue;
 				}
 
@@ -44,7 +99,6 @@ function updateRadius(radius) {
 
 			if (!isEmptyRadius(rule.style.borderTopLeftRadius)) {
 				if (rule.style.borderTopLeftRadius.includes(' ')) {
-					// console.log(rule.cssText);
 					continue;
 				}
 
@@ -53,7 +107,6 @@ function updateRadius(radius) {
 
 			if (!isEmptyRadius(rule.style.borderTopRightRadius)) {
 				if (rule.style.borderTopRightRadius.includes(' ')) {
-					// console.log(rule.cssText);
 					continue;
 				}
 
@@ -62,7 +115,6 @@ function updateRadius(radius) {
 
 			if (!isEmptyRadius(rule.style.borderBottomRightRadius)) {
 				if (rule.style.borderBottomRightRadius.includes(' ')) {
-					// console.log(rule.cssText);
 					continue;
 				}
 
@@ -71,7 +123,6 @@ function updateRadius(radius) {
 
 			if (!isEmptyRadius(rule.style.borderBottomLeftRadius)) {
 				if (rule.style.borderBottomLeftRadius.includes(' ')) {
-					// console.log(rule.cssText);
 					continue;
 				}
 
