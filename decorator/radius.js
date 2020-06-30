@@ -63,8 +63,12 @@ function isEmptyRadius(radius) {
 }
 
 function ignoreSelector(selector) {
-	// FIXME use hashtable here
-	let exceptedSelectors = [".notification-indicator", ".repo-language-color"];
+	let exceptedSelectors = [
+		".notification-indicator",
+		".repo-language-color",
+		".discussion-item-icon",
+		".TimelineItem-badge",
+	];
 
 	for (let i = 0; i < exceptedSelectors.length; i++) {
 		if (selector.includes(exceptedSelectors[i])) {
