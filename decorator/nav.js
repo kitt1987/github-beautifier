@@ -37,6 +37,7 @@ function ConfigView() {
 
 function Enable(data) {
 	alignNavToCenter();
+	window.addEventListener('resize', () => {alignNavToCenter();});
 }
 
 function alignNavToCenter() {
@@ -58,6 +59,5 @@ function alignNavToCenter() {
 		return;
 	}
 
-	// FIXME responsive for width change
 	nav[0].style.paddingLeft = (repo[0].offsetLeft-nav[0].offsetLeft) + "px";
 }

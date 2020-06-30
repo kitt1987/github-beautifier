@@ -27,6 +27,16 @@ function InitConfigView(globalConf) {
 	      code: 'updateRadius("' + globalConf.radius + '")'
 	    });
 	});
+
+	document.getElementById('radius').addEventListener('change', (event) => {
+		globalConf.radius = event.target.value;
+		chrome.storage.local.set(globalConf);
+		if (globalConf.updateRadius) {
+			chrome.tabs.executeScript({
+		      code: 'updateRadius("' + globalConf.radius + '")'
+		    });
+		}
+	});
 }
 
 function ConfigView() {
