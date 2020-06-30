@@ -3,7 +3,6 @@ let Config = {
 	Data: {},
 	Load: (cb) => {
 		chrome.storage.local.get(null, (result) => {
-			console.debug(result);
 			if (result) {
 				Config.Data = result;
 			}

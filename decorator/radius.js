@@ -130,4 +130,12 @@ function updateRadius(radius) {
 			}
 		}
 	}
+
+	let status = document.getElementsByClassName("user-status-circle-badge-container");
+	if (!status || status.length == 0) {
+		console.log("status view not found");
+		return;
+	}
+
+	status[0].style.marginBottom = "-55px";
 }
