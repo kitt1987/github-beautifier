@@ -2,7 +2,7 @@
 	<head>
 		<style>
 			html, body {
-				width: 240px;
+				width: 340px;
 				margin: 0px;
 				font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 				font-size: 14px;
@@ -18,25 +18,52 @@
 				margin: 5px 15px 5px 15px;
 			}
 
-			.rowcontainer {
+			.column {
 				display: flex;
 				flex-direction: row;
-				justify-content: space-between;
+				justify-content: space-around;
 				align-self: center;
+			}
+
+			.c2 {
+				width: 80px;
 			}
 
 			.row {
 				display: flex;
 				flex-direction: row;
 				align-items: center;
+				justify-content: space-between;
 				margin: 10px 0 10px 0;
 			}
 
 			.button {
-				display: block;
+				display: flex;
 				width: 32px;
-				height: 16px;
-				background-color: #6f42c1;
+				height: 17px;
+				background-color: #2D77F6;
+				justify-content: center;
+			}
+
+			.navbar {
+				display: flex;
+				width: 32px;
+				height: 17px;
+				box-shadow: inset 0 -1px 0 #e1e4e8;
+				color: #959da5;
+				font-size: 10px;
+			}
+
+			.nl {
+				justify-content: flex-start;
+			}
+
+			.nc {
+				justify-content: center;
+			}
+
+			.nactive {
+				box-shadow: inset 0 -1px 0 #f9826c;
 			}
 
 			.bad {
@@ -48,9 +75,11 @@
 			}
 
 			.textfield {
-				border-top: none;
+				/*border-top: none;
 				border-left: none;
-				border-right: none;
+				border-right: none;*/
+				border: none;
+				box-shadow: inset 0 -1px 0 #e1e4e8;
 				width: 40px;
 			}
 
@@ -60,15 +89,16 @@
 				vertical-align: middle;
 			}
 
-			.column {
-				margin-left: 10px;
+			.arrow {
+				margin-left: 4px;
+				margin-right: 4px;
 			}
 
 			.check {
-				margin: 0px;
+				margin-right: 10px;
 			}
 
-			.avatar {
+			.logo {
 				height: 40px;
 				width: 40px;
 			}
@@ -83,7 +113,7 @@
 	</head>
 	<body>
 		<div class="banner">
-			<img class="avatar" src="icon/banner.png">
+			<img class="logo" src="icon/banner.png">
 		</div>
 		<div class="container" id="container"></div>
 		<script src="decorator/radius.js"></script>

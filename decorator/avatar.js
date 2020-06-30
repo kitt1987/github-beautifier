@@ -31,8 +31,15 @@ function InitConfigView(globalConf) {
 function ConfigView() {
 	return `
 <div class="row">
-	<input class="check" type="checkbox" id="keepTopRightAvatar" checked="true">
-	<p class="text column">Keep the top right avatar</p>
+	<div class="column">
+		<input class="check" type="checkbox" id="keepTopRightAvatar" checked="true">
+		<p class="text column">Keep the top right avatar</p>
+	</div>
+	<div class="column c2">
+		<img width="17" height="17" src="https://avatars2.githubusercontent.com/u/760562?s=60&amp;v=4" style="border-radius: 3px;">
+		<p class="text">&rarr;</p>
+		<img width="17" height="17" src="https://avatars2.githubusercontent.com/u/760562?s=60&amp;v=4" style="border-radius: 50%;">
+	</div>
 </div> 
 `;
 }

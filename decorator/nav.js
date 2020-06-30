@@ -29,8 +29,19 @@ function InitConfigView(globalConf) {
 function ConfigView() {
 	return `
 <div class="row">
-	<input class="check" type="checkbox" id="centralizeNav" checked="true">
-	<p class="text column">Centralize Navbar</p>
+	<div class="column">
+		<input class="check" type="checkbox" id="centralizeNav" checked="true">
+		<p class="text column">Centralize Navgator</p>
+	</div>
+	<div class="column c2">
+		<div class="navbar nl">
+			<label class="nactive">&lt;&gt;</label>
+		</div>
+		<p class="text">&rarr;</p>
+		<div class="navbar nc">
+			<label class="nactive">&lt;&gt;</label>
+		</div>
+	</div>
 </div> 
 `;
 }

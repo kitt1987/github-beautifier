@@ -1,5 +1,5 @@
 let Config = {
-	Modules: [ Radius, Nav, Avatar ],
+	Modules: [ Nav, Radius, Avatar ],
 	Data: {},
 	Load: (cb) => {
 		chrome.storage.local.get(null, (result) => {
