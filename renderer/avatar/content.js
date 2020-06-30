@@ -17,3 +17,5 @@ function updateAvatarStyle(radius) {
 		}
 	}
 }
+
+console.log("avatar loaded");

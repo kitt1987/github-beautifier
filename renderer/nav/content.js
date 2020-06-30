@@ -20,3 +20,5 @@ function alignNavToCenter() {
 	console.log(repo[0].offsetLeft);
 	nav[0].style.paddingLeft = (repo[0].offsetLeft-nav[0].offsetLeft) + "px";
 }
+
+console.log("nav loaded");

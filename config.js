@@ -1,20 +1,21 @@
-'use strict';
+let Config = {
+	Modules: [ Radius, Nav, Avatar ],
+	Data: {},
+	Load: (cb) => {
+		chrome.storage.local.get(null, (result) => {
+			console.debug(result);
+			if (result) {
+				Config.Data = result;
+			}
 
-import * as Radius from './renderer/radius/config.js';
-import * as Avatar from './renderer/avatar/config.js';
-
-let Modules = [
-	Radius, Avatar,
-];
-
-let Data = {
+			cb();
+		});
+	},
 };
 
-for (var i = 0; i < Modules.length; i++) {
-	let conf = Modules[i].Config();
+for (var i = 0; i < Config.Modules.length; i++) {
+	let conf = Config.Modules[i].Config();
 	for (const key in conf) {
-		Data[key] = conf[key];
+		Config.Data[key] = conf[key];
 	}
 }
-
-export { Modules, Data };

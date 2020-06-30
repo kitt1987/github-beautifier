@@ -31,7 +31,6 @@ function updateRadius(radius) {
 
 			if (!isEmptyRadius(rule.style.borderRadius)) {
 				if (rule.style.borderRadius.includes(' ')) {
-					// console.log(rule.cssText);
 					continue;
 				}
 
@@ -40,7 +39,6 @@ function updateRadius(radius) {
 
 			if (!isEmptyRadius(rule.style.borderTopLeftRadius)) {
 				if (rule.style.borderTopLeftRadius.includes(' ')) {
-					// console.log(rule.cssText);
 					continue;
 				}
 
@@ -49,7 +47,6 @@ function updateRadius(radius) {
 
 			if (!isEmptyRadius(rule.style.borderTopRightRadius)) {
 				if (rule.style.borderTopRightRadius.includes(' ')) {
-					// console.log(rule.cssText);
 					continue;
 				}
 
@@ -58,7 +55,6 @@ function updateRadius(radius) {
 
 			if (!isEmptyRadius(rule.style.borderBottomRightRadius)) {
 				if (rule.style.borderBottomRightRadius.includes(' ')) {
-					// console.log(rule.cssText);
 					continue;
 				}
 
@@ -67,7 +63,6 @@ function updateRadius(radius) {
 
 			if (!isEmptyRadius(rule.style.borderBottomLeftRadius)) {
 				if (rule.style.borderBottomLeftRadius.includes(' ')) {
-					// console.log(rule.cssText);
 					continue;
 				}
 
