@@ -42,13 +42,15 @@ function InitConfigView(globalConf) {
 function ConfigView() {
 	return `
 <div class="row">
-	<input class="check" type="checkbox" id="radiusUpdate" checked="true">
-	<div class="button bad column"></div>
-	<p class="text">&rarr;</p>
-	<div class="button good"></div>
-	<div class="rowcontainer column">
-		<p class="text">, radius:</p>
+	<div class="column">
+		<input class="check" type="checkbox" id="radiusUpdate" checked="true">
+		<p class="text">border_radius:</p>
 		<input class="textfield" type="text" id="radius" value="3px">
+	</div>
+	<div class="column c2">
+		<div class="button bad column"></div>
+		<p class="text arrow">&rarr;</p>
+		<div class="button good"></div>
 	</div>
 </div>
 `;
