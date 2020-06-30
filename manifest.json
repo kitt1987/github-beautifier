@@ -12,9 +12,9 @@
   "background": {
     "persistent": false,
     "scripts": [
-      "renderer/radius/config.js",
-      "renderer/avatar/config.js",
-      "renderer/nav/config.js",
+      "decorator/avatar.js",
+      "decorator/nav.js",
+      "decorator/radius.js",
       "config.js",
       "background.js"
     ]
@@ -30,9 +30,9 @@
       "matches": ["https://*.github.com/*"],
       "run_at": "document_start",
       "js": [
-        "renderer/radius/config.js",
-        "renderer/avatar/config.js",
-        "renderer/nav/config.js",
+        "decorator/avatar.js",
+        "decorator/nav.js",
+        "decorator/radius.js",
         "config.js",
         "content.js"
       ]

@@ -11,6 +11,7 @@ let Nav = {
 };
 
 function InitConfigView(globalConf) {
+	document.getElementById('centralizeNav').checked = globalConf.centralizeNav;
 	document.getElementById('centralizeNav').addEventListener('click', (event) => {
 		globalConf.centralizeNav = event.target.checked
 		chrome.storage.local.set(globalConf);

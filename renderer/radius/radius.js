@@ -12,6 +12,8 @@ let Radius = {
 };
 
 function InitConfigView(globalConf) {
+	document.getElementById('radiusUpdate').checked = globalConf.updateRadius;
+	document.getElementById('radius').value = globalConf.radius;
 	document.getElementById('radiusUpdate').addEventListener('click', (event) => {
 		globalConf.radius = document.getElementById('radius').value;
 		globalConf.updateRadius = event.target.checked

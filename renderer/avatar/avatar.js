@@ -11,6 +11,7 @@ let Avatar = {
 };
 
 function InitConfigView(globalConf) {
+	document.getElementById('keepTopRightAvatar').checked = globalConf.keepTopRightAvatar;
 	document.getElementById('keepTopRightAvatar').addEventListener('click', (event) => {
 		globalConf.keepTopRightAvatar = event.target.checked
 		chrome.storage.local.set(globalConf);
