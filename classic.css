@@ -8,13 +8,8 @@ summary>img.avatar-user {
 	border-radius: 50% !important;
 }
 
-/* home page avatar */
-img.avatar-user {
-	border-radius: 3px !important;
-}
-
-/* avatar in timeline */
-a.avatar-user {
+/* home page avatar, avatar in timeline */
+img.avatar-user, a.avatar-user {
 	border-radius: 3px !important;
 }
 
@@ -41,6 +36,32 @@ span.discussion-item-icon {
 /* timeline gadge */
 div.TimelineItem-badge {
 	border-radius: 50% !important;
+}
+
+/* button with count */
+summary.btn-with-count, button.btn-with-count {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+button.btn-group-merge, button.btn-group-squash, button.btn-group-rebase {
+	border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-top-left-radius: 3px !important;
+    border-bottom-left-radius: 3px !important;
+}
+
+details.details-reset.details-overlay.BtnGroup-parent, summary.js-merge-method-menu-button {
+	border-top-right-radius: 3px !important;
+    border-bottom-right-radius: 3px !important;
+	border-top-left-radius: 0 !important;
+	border-bottom-left-radius: 0 !important;
+}
+
+/* navbar social count*/
+a.social-count {
+	border-top-left-radius: 0 !important;
+	border-bottom-left-radius: 0 !important;
 }
 
 /* navbar */
