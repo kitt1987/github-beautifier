@@ -25,16 +25,16 @@ span.mail-status, span.repo-language-color, span.discussion-item-icon, span.disc
 }
 
 /* button group */
-.BtnGroup-item, .BtnGroup-parent, .BtnGroup {
+.BtnGroup-item, .BtnGroup-parent, .BtnGroup, .subnav-item {
 	border-radius: 0 !important;
 }
 
-.BtnGroup-item:first-child, .BtnGroup-parent:first-child, .BtnGroup:first-child {
+.BtnGroup-item:first-child, .BtnGroup-parent:first-child, .BtnGroup:first-child, .subnav-item:first-child {
     border-top-left-radius: 3px !important;
     border-bottom-left-radius: 3px !important;
 }
 
-.BtnGroup-item:last-child, .BtnGroup-parent:last-child, .BtnGroup:last-child {
+.BtnGroup-item:last-child, .BtnGroup-parent:last-child, .BtnGroup:last-child, .subnav-item:last-child {
 	border-top-right-radius: 3px !important;
     border-bottom-right-radius: 3px !important;
 }
@@ -55,6 +55,17 @@ span.mail-status, span.repo-language-color, span.discussion-item-icon, span.disc
 
 .BtnGroup-item:last-child .BtnGroup-item:first-child {
 	border-radius: 3px !important;
+}
+
+/* search PR */
+#filters-select-menu>summary {
+	border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+#js-issues-search {
+	border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
 }
 
 /* navbar social count*/
