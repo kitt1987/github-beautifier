@@ -1,10 +1,19 @@
 chrome.tabs.onActivated.addListener(function(activeInfo) {
 	// activeInfo.tabId  activeInfo.windowId
-	chrome.tabs.get(activeInfo.tabId, updateIcon);
+	chrome.tabs.get(activeInfo.tabId, (tab) => {
+		if (chrome.runtime.lastError) {
+			console.log(chrome.runtime.lastError.message);
+			return;
+		}
+
+		updateIcon(tab);
+	});
 });
 
 chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
-	updateIcon(tab);
+	if (changeInfo.status != 'unloaded') {
+		updateIcon(tab);
+	}
 });
 
 function updateIcon(tab) {
