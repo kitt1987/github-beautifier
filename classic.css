@@ -24,7 +24,7 @@ span.mail-status, span.repo-language-color, span.discussion-item-icon, span.disc
 	border-radius: 50% !important;
 }
 
-/* button with count */
+/* button group */
 .BtnGroup-item, .BtnGroup-parent, .BtnGroup {
 	border-radius: 0 !important;
 }
@@ -63,8 +63,18 @@ a.social-count {
 	border-bottom-left-radius: 0 !important;
 }
 
+/* watch, star, and fork */
+summary.btn-with-count, button.btn-with-count {
+	border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
 /* navbar */
 ul.UnderlineNav-body {
     margin-left: auto;
     margin-right: auto;
+}
+
+header, .pagehead, .UnderlineNav, .flash-full {
+	border-radius: 0 !important;
 }
