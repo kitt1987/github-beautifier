@@ -25,23 +25,31 @@ span.mail-status, span.repo-language-color, span.discussion-item-icon, span.disc
 }
 
 /* button group */
-.BtnGroup-item, .BtnGroup-parent, .BtnGroup, .subnav-item {
+.BtnGroup {
+	border-radius: 3px !important;
+}
+
+.BtnGroup-parent, .BtnGroup-item {
 	border-radius: 0 !important;
 }
 
-.BtnGroup-item:first-child, .BtnGroup-parent:first-child, .BtnGroup:first-child, .subnav-item:first-child {
+.BtnGroup-parent:first-child, .BtnGroup-item:first-child {
     border-top-left-radius: 3px !important;
     border-bottom-left-radius: 3px !important;
 }
 
-.BtnGroup-item:last-child, .BtnGroup-parent:last-child, .BtnGroup:last-child, .subnav-item:last-child {
+.BtnGroup-parent:last-child, .BtnGroup-item:last-child {
 	border-top-right-radius: 3px !important;
     border-bottom-right-radius: 3px !important;
 }
 
-.BtnGroup-item:first-child .BtnGroup-parent:first-child {
-	border-top-left-radius: 0 !important;
-    border-bottom-left-radius: 0 !important;
+.BtnGroup-parent .BtnGroup-item {
+    border-radius: 0 !important;
+}
+
+.BtnGroup-parent:first-child .BtnGroup-item {
+    border-top-left-radius: 3px !important;
+    border-bottom-left-radius: 3px !important;
 }
 
 .BtnGroup-parent:last-child .BtnGroup-item {
@@ -49,15 +57,21 @@ span.mail-status, span.repo-language-color, span.discussion-item-icon, span.disc
     border-bottom-right-radius: 3px !important;
 }
 
-.BtnGroup-parent .BtnGroup-item {
+/* search PR */
+.subnav-item {
 	border-radius: 0 !important;
 }
 
-.BtnGroup-item:last-child .BtnGroup-item:first-child {
-	border-radius: 3px !important;
+.subnav-item:first-child {
+    border-top-left-radius: 3px !important;
+    border-bottom-left-radius: 3px !important;
 }
 
-/* search PR */
+.subnav-item:last-child {
+	border-top-right-radius: 3px !important;
+    border-bottom-right-radius: 3px !important;
+}
+
 #filters-select-menu>summary {
 	border-top-right-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
@@ -86,6 +100,11 @@ ul.UnderlineNav-body {
     margin-right: auto;
 }
 
-header, .pagehead, .UnderlineNav, .flash-full {
+header, .pagehead, .UnderlineNav, .flash-full, li.notifications-list-item {
 	border-radius: 0 !important;
+}
+
+.Box-header {
+	border-bottom-left-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
 }
