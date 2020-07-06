@@ -100,11 +100,11 @@ ul.UnderlineNav-body {
     margin-right: auto;
 }
 
-header, .pagehead, .UnderlineNav, .flash-full, li.notifications-list-item {
+header, .pagehead, .UnderlineNav, .flash-full, li.notifications-list-item, .js-selected-navigation-item {
 	border-radius: 0 !important;
 }
 
-.Box-header {
+.Box-header, .menu-heading {
 	border-bottom-left-radius: 0 !important;
 	border-bottom-right-radius: 0 !important;
 }

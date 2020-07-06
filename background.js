@@ -31,7 +31,18 @@ function updateIcon(tab) {
 		          "48": "icon/active64.png",
 		          "128": "icon/active128.png"
 		    }
+		}, () => {
+			if (chrome.runtime.lastError) {
+				console.log(chrome.runtime.lastError.message);
+				return;
+			}
+
+			chrome.pageAction.show(tab.id, () => {
+				if (chrome.runtime.lastError) {
+					console.log(chrome.runtime.lastError.message);
+					return;
+				}
+			});
 		});
-		chrome.pageAction.show(tab.id);
 	}
 }
