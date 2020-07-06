@@ -2,7 +2,7 @@
 	<head>
 		<style>
 			html, body {
-				width: 340px;
+				width: 320px;
 				margin: 0px;
 				font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 				font-size: 14px;
@@ -21,12 +21,12 @@
 			.column {
 				display: flex;
 				flex-direction: row;
-				justify-content: space-around;
+				justify-content: flex-start;
 				align-self: center;
 			}
 
 			.c2 {
-				width: 80px;
+				width: 32px;
 			}
 
 			.row {
@@ -40,15 +40,15 @@
 			.button {
 				display: flex;
 				width: 32px;
-				height: 17px;
-				background-color: #2D77F6;
+				height: 20px;
+				background-color: #2ea44f;
 				justify-content: center;
 			}
 
 			.navbar {
 				display: flex;
 				width: 32px;
-				height: 17px;
+				height: 20px;
 				box-shadow: inset 0 -1px 0 #e1e4e8;
 				color: #959da5;
 				font-size: 10px;
@@ -75,9 +75,6 @@
 			}
 
 			.textfield {
-				/*border-top: none;
-				border-left: none;
-				border-right: none;*/
 				border: none;
 				box-shadow: inset 0 -1px 0 #e1e4e8;
 				width: 40px;
@@ -96,6 +93,7 @@
 
 			.check {
 				margin-right: 10px;
+				margin-left: 0;
 			}
 
 			.logo {
@@ -109,17 +107,61 @@
 				background-color: #24292e;
 				padding-top: 5px;
 			}
+
+			.avatar {
+				height: 18px;
+				width: 18px;
+				border-radius: 50%;
+				margin: 1px 1px 1px 2px;
+			}
+
+			.avatarBG {
+				background-color: #24292e;
+				justify-content: flex-end;
+				align-items: center;
+			}
+
+			.dropdown-caret {
+			    display: inline-block;
+			    width: 0;
+			    height: 0;
+			    vertical-align: middle;
+			    content: "";
+			    border-top-style: solid;
+			    border-top-width: 4px;
+			    border-right: 4px solid transparent;
+			    border-bottom: 0 solid transparent;
+			    border-left: 4px solid transparent;
+			    color: #fff;
+			    margin: 1px 2px 1px 0px;
+			}
+
+			.foot {
+				height: 20px;
+				display: flex;
+				flex: 1;
+				justify-content: flex-start;
+				padding-left: 15px;
+				padding-top: 5px;
+				padding-bottom: 5px;
+				border-color: #e1e4e8;
+				border-top: 1px;
+			}
 		</style>
 	</head>
 	<body>
 		<div class="banner">
 			<img class="logo" src="icon/banner.png">
 		</div>
+
 		<div class="container" id="container"></div>
-		<script src="decorator/radius.js"></script>
-		<script src="decorator/avatar.js"></script>
-		<script src="decorator/nav.js"></script>
-		<script src="config.js"></script>
+		
+		<div class="foot">
+			<a id="repo" href="https://github.com/kitt1987/github-beautifier" aria-label="Issue kitt1987/github-beautifier on GitHub">
+				<img width="17px" height="17px" src="icon/github.png" />
+			</a>
+		</div>
+
 		<script src="popup.js"></script>
 	</body>
 </html>

@@ -1,0 +1,56 @@
+/* all border radius */
+* {
+	border-radius: 3px !important;
+}
+
+/* top right avatar */
+summary>img.avatar-user {
+	border-radius: 50% !important;
+}
+
+/* home page avatar, avatar in timeline */
+img.avatar-user, a.avatar-user {
+	border-radius: 3px !important;
+}
+
+/* home page status */
+div.user-status-circle-badge-container {
+	margin-bottom: -55px;
+}
+
+/* navbar message indicator, home page language indicator, home page discussion icon, home page discussion icon, timeline gadge */
+span.mail-status, span.repo-language-color, span.discussion-item-icon, span.discussion-item-icon, div.TimelineItem-badge {
+	border-radius: 50% !important;
+}
+
+/* button with count */
+summary.btn-with-count, button.btn-with-count {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+button.btn-group-merge, button.btn-group-squash, button.btn-group-rebase {
+	border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-top-left-radius: 3px !important;
+    border-bottom-left-radius: 3px !important;
+}
+
+details.details-reset.details-overlay.BtnGroup-parent, summary.js-merge-method-menu-button {
+	border-top-right-radius: 3px !important;
+    border-bottom-right-radius: 3px !important;
+	border-top-left-radius: 0 !important;
+	border-bottom-left-radius: 0 !important;
+}
+
+/* navbar social count*/
+a.social-count {
+	border-top-left-radius: 0 !important;
+	border-bottom-left-radius: 0 !important;
+}
+
+/* navbar */
+ul.UnderlineNav-body {
+    margin-left: auto;
+    margin-right: auto;
+}
