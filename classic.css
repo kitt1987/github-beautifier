@@ -1,3 +1,4 @@
+/* CAUTION: KEEP the selector ORDER; */
 /* all border radius */
 * {
 	border-radius: 3px !important;
@@ -24,23 +25,36 @@ span.mail-status, span.repo-language-color, span.discussion-item-icon, span.disc
 }
 
 /* button with count */
-summary.btn-with-count, button.btn-with-count {
-    border-top-right-radius: 0 !important;
-    border-bottom-right-radius: 0 !important;
+.BtnGroup-item, .BtnGroup-parent, .BtnGroup {
+	border-radius: 0 !important;
 }
 
-button.btn-group-merge, button.btn-group-squash, button.btn-group-rebase {
-	border-top-right-radius: 0 !important;
-    border-bottom-right-radius: 0 !important;
+.BtnGroup-item:first-child, .BtnGroup-parent:first-child, .BtnGroup:first-child {
     border-top-left-radius: 3px !important;
     border-bottom-left-radius: 3px !important;
 }
 
-details.details-reset.details-overlay.BtnGroup-parent, summary.js-merge-method-menu-button {
+.BtnGroup-item:last-child, .BtnGroup-parent:last-child, .BtnGroup:last-child {
 	border-top-right-radius: 3px !important;
     border-bottom-right-radius: 3px !important;
+}
+
+.BtnGroup-item:first-child .BtnGroup-parent:first-child {
 	border-top-left-radius: 0 !important;
-	border-bottom-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+.BtnGroup-parent:last-child .BtnGroup-item {
+	border-top-right-radius: 3px !important;
+    border-bottom-right-radius: 3px !important;
+}
+
+.BtnGroup-parent .BtnGroup-item {
+	border-radius: 0 !important;
+}
+
+.BtnGroup-item:last-child .BtnGroup-item:first-child {
+	border-radius: 3px !important;
 }
 
 /* navbar social count*/

@@ -1,5 +1,5 @@
 {
-  "name": "GitHub Beautifier",
+  "name": "GitHub Classic Theme",
   "version": "0.9",
   "description": "Beautify the New GitHub UI",
   "manifest_version": 2,
@@ -15,26 +15,16 @@
       "background.js"
     ]
   },
-  "event_rules": [{
-    "event": "declarativeContent.onPageChanged",
-    "actions": [{
-      "type": "declarativeContent.SetIcon",
-      "path": {
-          "16": "icon/active32.png",
-          "32": "icon/active32.png",
-          "48": "icon/active64.png",
-          "128": "icon/active128.png"
-      }
-    }],
-    "conditions": [{
-      "type": "declarativeContent.PageStateMatcher",
-      "pageURL": { "hostSuffix": "github.com" }
-    }]
-  }],
-  "permissions": ["declarativeContent", "activeTab", "tabs", "*://*.github.com/*"],
+  "permissions": [
+    "storage",
+    "declarativeContent",
+    "activeTab",
+    "tabs",
+    "*://*.github.com/*"
+  ],
   "page_action": {
     "default_icon": "icon/inactive32.png",
-    "default_title": "GitHub Beautifier",
+    "default_title": "GitHub Classic Theme",
     "default_popup": "popup.html"
   },
   "content_scripts": [

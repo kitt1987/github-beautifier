@@ -23,5 +23,6 @@ function updateIcon(tab) {
 		          "128": "icon/active128.png"
 		    }
 		});
+		chrome.pageAction.show(tab.id);
 	}
 }
