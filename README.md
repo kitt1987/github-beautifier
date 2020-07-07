@@ -1,19 +1,30 @@
 # GitHub Beautifier
+<img src="https://github.com/kitt1987/github-beautifier/blob/master/doc/img/promo.png?raw=true" style="zoom:50%;" />
 
-GitHub Beautifier is an extension for Chrome browser to improve experiences of the new GitHub Web UI.
+GitHub launched its new WebUI on July 23. Buttons, labels, almost everything becomes circles. I can't stand to see them every day.
 
-We imporve it in the ways below.
+So, I built this Chrome extension, **Github Classic Theme**, to bring something I familiar back.
 
-1. Dramatically decrease the 'border-radius',
-2. Align the navbar to the main container,
-3. Keep reasonable circles, such as avatar in header and indicators.
-
+The extension is small and quick since it only injects CSS to Github pages to override some styles, w/o any calculation after DOM rendered.
 
 
-## Comparison
 
-| <img src="https://github.com/kitt1987/github-beautifier/blob/master/doc/img/pr_u.png?raw=true" style="zoom:50%;" />   | <img src="https://github.com/kitt1987/github-beautifier/blob/master/doc/img/pr.png?raw=true" alt="pr" style="zoom:50%;" /> |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| <img src="https://github.com/kitt1987/github-beautifier/blob/master/doc/img/list_u.png?raw=true" alt="list_u" style="zoom:50%;" /> | <img src="https://github.com/kitt1987/github-beautifier/blob/master/doc/img/list.png?type=raw=true" alt="list" style="zoom:50%;" /> |
-| <img src="https://github.com/kitt1987/github-beautifier/blob/master/doc/img/avatar_u.png?raw=true" alt="avatar_u" style="zoom:50%;" /> | <img src="https://github.com/kitt1987/github-beautifier/blob/master/doc/img/avatar.png?raw=true" alt="avatar" style="zoom:50%;" /> |
+The extension improves the experience in the following ways,
 
+1. Decreases the `border-radius` of buttons and labels but keeps most indicators in circles,
+2. Aligns the repo navigation bar to its contents.
+
+
+
+The version of the extension will be the date of GitHub updated. The first version is `2020.6.23`. I will update the extension once it isn't compatible with the future version of GitHub.
+
+
+
+## Screenshots
+<img src="https://github.com/kitt1987/github-beautifier/blob/master/doc/img/screenshot1.png?raw=true" style="zoom:50%;" />
+
+<img src="https://github.com/kitt1987/github-beautifier/blob/master/doc/img/screenshot2.png?raw=true" style="zoom:50%;" />
+
+<img src="https://github.com/kitt1987/github-beautifier/blob/master/doc/img/screenshot3.png?raw=true" style="zoom:50%;" />
+
+<img src="https://github.com/kitt1987/github-beautifier/blob/master/doc/img/screenshot4.png?raw=true" style="zoom:50%;" />
