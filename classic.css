@@ -20,7 +20,11 @@ div.user-status-circle-badge-container {
 }
 
 /* navbar message indicator, home page language indicator, home page discussion icon, home page discussion icon, timeline gadge */
-span.mail-status, span.repo-language-color, span.discussion-item-icon, span.discussion-item-icon, div.TimelineItem-badge {
+span.mail-status,
+span.repo-language-color,
+span.discussion-item-icon,
+span.discussion-item-icon,
+div.TimelineItem-badge {
 	border-radius: 50% !important;
 }
 
@@ -100,7 +104,17 @@ ul.UnderlineNav-body {
     margin-right: auto;
 }
 
-header, .pagehead, .UnderlineNav, .flash-full, li.notifications-list-item, .js-selected-navigation-item {
+header,
+.pagehead,
+.UnderlineNav,
+.flash-full,
+li.notifications-list-item,
+.js-selected-navigation-item,
+.Box-row,
+.js-navigation-container,
+div[aria-label=Issues],
+.Box-row--drag-hide,
+.Box-row--drag-hide>div {
 	border-radius: 0 !important;
 }
 
