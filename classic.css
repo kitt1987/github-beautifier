@@ -114,8 +114,28 @@ li.notifications-list-item,
 .js-navigation-container,
 div[aria-label=Issues],
 .Box-row--drag-hide,
-.Box-row--drag-hide>div {
+.Box-row--drag-hide>div,
+.table-list,
+.table-list-item,
+.table-list-cell,
+.js-file-content,
+.js-file-content>div,
+table.diff-table,
+table.diff-table>tbody,
+tr.js-expandable-line,
+tr.js-expandable-line>td,
+tr.js-expandable-line>td>a {
 	border-radius: 0 !important;
+}
+
+.table-list-item:first-child .table-list-cell {
+	border-top-left-radius: 3px !important;
+	border-top-right-radius: 3px !important;
+}
+
+.table-list-item:last-child .table-list-cell {
+	border-bottom-left-radius: 3px !important;
+	border-bottom-right-radius: 3px !important;
 }
 
 .Box-header, .menu-heading {
