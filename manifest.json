@@ -1,7 +1,7 @@
 {
   "name": "GitHub Classic Theme",
   "version": "2020.6.23",
-  "description": "Beautify the New GitHub UI",
+  "description": "Bring the GitHub experience back",
   "manifest_version": 2,
   "icons": {
     "16": "icon/inactive32.png",

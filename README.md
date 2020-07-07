@@ -9,7 +9,7 @@ The extension is small and quick since it only injects CSS to Github pages to ov
 
 
 
-The extension improves the experience in the following ways,
+The extension improves the GitHub experience in the following ways,
 
 1. Decreases the `border-radius` of buttons and labels but keeps most indicators in circles,
 2. Aligns the repo navigation bar to its contents.
