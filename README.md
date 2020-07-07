@@ -1,7 +1,7 @@
 # GitHub Beautifier
 <img src="https://github.com/kitt1987/github-beautifier/blob/master/doc/img/promo.png?raw=true" style="zoom:50%;" />
 
-GitHub launched its new WebUI on July 23. Buttons, labels, almost everything becomes circles. I can't stand to see them every day.
+GitHub launched its new WebUI on Jun 23. Buttons, labels, almost everything becomes circles. I can't stand to see them every day.
 
 So, I built this Chrome extension, **Github Classic Theme**, to bring something I familiar back.
 
@@ -16,7 +16,7 @@ The extension improves the experience in the following ways,
 
 
 
-The version of the extension will be the date of GitHub updated. The first version is `2020.6.23`. I will update the extension once it isn't compatible with the future version of GitHub.
+The version of the extension will be the date of GitHub updated. So, the first version is `2020.6.23`. I will update the extension once it isn't compatible with the future version of GitHub.
 
 
 
