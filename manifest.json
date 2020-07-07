@@ -16,9 +16,6 @@
     ]
   },
   "permissions": [
-    "storage",
-    "declarativeContent",
-    "activeTab",
     "tabs",
     "*://*.github.com/*"
   ],
