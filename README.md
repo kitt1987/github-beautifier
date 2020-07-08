@@ -1,4 +1,6 @@
 # GitHub Beautifier
+[Chrome Web Store](https://chrome.google.com/webstore/detail/github-classic-theme/lfohokbmobgameodjhbphklfeijmeebk)
+
 <img src="https://github.com/kitt1987/github-beautifier/blob/master/doc/img/promo.png?raw=true" style="zoom:50%;" />
 
 GitHub launched its new WebUI on Jun 23. Buttons, labels, almost everything becomes circles. I can't stand to see them every day.
