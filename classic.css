@@ -24,7 +24,7 @@ span.mail-status,
 span.repo-language-color,
 span.discussion-item-icon,
 span.discussion-item-icon,
-div.TimelineItem-badge {
+div.TimelineItem-badge, span.TimelineItem-badge {
 	border-radius: 50% !important;
 }
 
