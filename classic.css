@@ -98,12 +98,6 @@ summary.btn-with-count, button.btn-with-count {
     border-bottom-right-radius: 0 !important;
 }
 
-/* navbar */
-ul.UnderlineNav-body {
-    margin-left: auto;
-    margin-right: auto;
-}
-
 header,
 .pagehead,
 .UnderlineNav,
@@ -141,4 +135,15 @@ tr.js-expandable-line>td>a {
 .Box-header, .menu-heading {
 	border-bottom-left-radius: 0 !important;
 	border-bottom-right-radius: 0 !important;
+}
+
+/* navbar */
+main>div.pagehead {
+	box-shadow: inset 0 -1px 0 #e1e4e8;
+}
+
+main>div.pagehead>nav {
+	max-width: 1280px;
+	margin-left: auto;
+	margin-right: auto;
 }
