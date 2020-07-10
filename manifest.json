@@ -1,7 +1,8 @@
 {
   "name": "GitHub Classic Theme",
-  "version": "2020.6.23",
+  "version": "2020.6.23.1",
   "description": "Bring the GitHub experience back",
+  "homepage_url": "https://kitt1987.github.io/github-beautifier",
   "manifest_version": 2,
   "icons": {
     "16": "icon/inactive32.png",
