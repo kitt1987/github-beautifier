@@ -21,16 +21,16 @@ div.user-status-circle-badge-container {
 }
 
 /* navbar message indicator, home page language indicator, home page discussion icon, home page discussion icon, timeline gadge */
-span.mail-status,
+/*span.mail-status,
 span.repo-language-color,
 span.discussion-item-icon,
 span.discussion-item-icon,
 div.TimelineItem-badge, span.TimelineItem-badge {
 	border-radius: 50% !important;
-}
+}*/
 
 /* button group */
-.BtnGroup {
+/*.BtnGroup {
 	border-radius: 3px !important;
 }
 
@@ -60,10 +60,10 @@ div.TimelineItem-badge, span.TimelineItem-badge {
 .BtnGroup-parent:last-child .BtnGroup-item {
 	border-top-right-radius: 3px !important;
     border-bottom-right-radius: 3px !important;
-}
+}*/
 
 /* search PR */
-.subnav-item {
+/*.subnav-item {
 	border-radius: 0 !important;
 }
 
@@ -85,21 +85,21 @@ div.TimelineItem-badge, span.TimelineItem-badge {
 #js-issues-search {
 	border-top-left-radius: 0 !important;
     border-bottom-left-radius: 0 !important;
-}
+}*/
 
 /* navbar social count*/
-a.social-count {
+/*a.social-count {
 	border-top-left-radius: 0 !important;
 	border-bottom-left-radius: 0 !important;
-}
+}*/
 
 /* watch, star, and fork */
-summary.btn-with-count, button.btn-with-count {
+/*summary.btn-with-count, button.btn-with-count {
 	border-top-right-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
-}
+}*/
 
-header,
+/*header,
 .pagehead,
 .UnderlineNav,
 .flash-full,
@@ -136,7 +136,7 @@ tr.js-expandable-line>td>a {
 .Box-header, .menu-heading {
 	border-bottom-left-radius: 0 !important;
 	border-bottom-right-radius: 0 !important;
-}
+}*/
 
 /* navbar */
 main>div.pagehead {
@@ -147,4 +147,51 @@ main>div.pagehead>nav {
 	max-width: 1280px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.label,
+.Label,
+.Box,
+.js-profile-editable-edit-button,
+a.btn,
+span.btn,
+.file-navigation>details>summary.btn,
+get-repo>details>summary.btn,
+#type-options>summary.btn,
+#language-options>summary.btn,
+.js-social-container>form>.btn-sm,
+.user-status-circle-badge,
+.ajax-pagination-form,
+.ajax-pagination-btn,
+.graph-before-activity-overview,
+.delete-topic-button,
+.topic-tag,
+.topic-tag-action,
+.dropdown-menu,
+input#your-repos-filter {
+	border-radius: 3px !important;
+}
+
+.input-group:last-child>.input-group-button>.btn,
+.social-count {
+	border-top-right-radius: 3px !important;
+    border-bottom-right-radius: 3px !important;
+}
+
+#filters-select-menu>summary.btn,
+.btn-with-count {
+	border-top-left-radius: 3px !important;
+	border-top-right-radius: 0;
+	border-bottom-left-radius: 3px !important;
+    border-bottom-right-radius: 0;
+}
+
+input#js-issues-search {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+summary.btn {
+	border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
