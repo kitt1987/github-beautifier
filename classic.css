@@ -1,8 +1,9 @@
 /* CAUTION: KEEP the selector ORDER; */
 /* all border radius */
-* {
+/** {
 	border-radius: 3px !important;
 }
+*/
 
 /* top right avatar */
 summary>img.avatar-user {
