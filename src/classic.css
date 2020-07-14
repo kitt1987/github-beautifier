@@ -153,13 +153,13 @@ main>div.pagehead>nav {
 .Label,
 .Box,
 .js-profile-editable-edit-button,
-a.btn,
+.file-navigation>a.btn,
 span.btn,
 .file-navigation>details>summary.btn,
 get-repo>details>summary.btn,
 #type-options>summary.btn,
 #language-options>summary.btn,
-.js-social-container>form>.btn-sm,
+.js-form-toggle-container>form>.btn-sm,
 .user-status-circle-badge,
 .ajax-pagination-form,
 .ajax-pagination-btn,
@@ -168,7 +168,10 @@ get-repo>details>summary.btn,
 .topic-tag,
 .topic-tag-action,
 .dropdown-menu,
-input#your-repos-filter {
+input#your-repos-filter,
+input.SelectMenu-input,
+div.SelectMenu-modal,
+span.Counter {
 	border-radius: 3px !important;
 }
 
@@ -189,9 +192,63 @@ input#your-repos-filter {
 input#js-issues-search {
 	border-top-left-radius: 0;
 	border-bottom-left-radius: 0;
+	border-top-right-radius: 3px !important;
+	border-bottom-right-radius: 3px !important;
 }
 
 summary.btn {
 	border-top-right-radius: 0;
     border-bottom-right-radius: 0;
+}
+
+.SelectMenu-tab {
+	border-top-left-radius: 3px !important;
+	border-top-right-radius: 3px !important;
+}
+
+/* button group */
+.BtnGroup {
+	border-radius: 3px !important;
+}
+
+.BtnGroup-parent, .BtnGroup-item {
+	border-radius: 0 !important;
+}
+
+.BtnGroup-parent:first-child, .BtnGroup-item:first-child {
+    border-top-left-radius: 3px !important;
+    border-bottom-left-radius: 3px !important;
+}
+
+.BtnGroup-parent:last-child, .BtnGroup-item:last-child {
+	border-top-right-radius: 3px !important;
+    border-bottom-right-radius: 3px !important;
+}
+
+.BtnGroup-parent .BtnGroup-item {
+    border-radius: 0 !important;
+}
+
+.BtnGroup-parent:first-child .BtnGroup-item {
+    border-top-left-radius: 3px !important;
+    border-bottom-left-radius: 3px !important;
+}
+
+.BtnGroup-parent:last-child .BtnGroup-item {
+	border-top-right-radius: 3px !important;
+    border-bottom-right-radius: 3px !important;
+}
+
+.subnav-item {
+	border-radius: 0 !important;
+}
+
+.subnav-item:first-child {
+    border-top-left-radius: 3px !important;
+    border-bottom-left-radius: 3px !important;
+}
+
+.subnav-item:last-child {
+	border-top-right-radius: 3px !important;
+    border-bottom-right-radius: 3px !important;
 }
