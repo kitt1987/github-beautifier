@@ -99,6 +99,9 @@ summary.btn-with-count, button.btn-with-count {
 }
 
 header,
+.gh-header-shadow,
+.footer,
+.footer>div,
 .pagehead,
 .UnderlineNav,
 .flash-full,
@@ -118,7 +121,9 @@ table.diff-table,
 table.diff-table>tbody,
 tr.js-expandable-line,
 tr.js-expandable-line>td,
-tr.js-expandable-line>td>a {
+tr.js-expandable-line>td>a,
+.discussion-timeline-actions,
+.discussion-sidebar-item {
 	border-radius: 0 !important;
 }
 
@@ -133,6 +138,19 @@ tr.js-expandable-line>td>a {
 }
 
 .Box-header, .menu-heading {
+	border-bottom-left-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
+}
+
+div.rounded-1 {
+	border-radius: 3px !important;
+}
+
+div.merge-status-list {
+	border: none;
+}
+
+.tabnav-tab {
 	border-bottom-left-radius: 0 !important;
 	border-bottom-right-radius: 0 !important;
 }
