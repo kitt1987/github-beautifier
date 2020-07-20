@@ -156,11 +156,11 @@ div.merge-status-list {
 }
 
 /* navbar */
-main>div.pagehead {
+main>div:first-child {
 	box-shadow: inset 0 -1px 0 #e1e4e8;
 }
 
-main>div.pagehead>nav {
+main>div>nav {
 	max-width: 1280px;
 	margin-left: auto;
 	margin-right: auto;
