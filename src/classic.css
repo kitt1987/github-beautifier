@@ -128,15 +128,39 @@ tr.js-expandable-line>td>a,
 #js-pjax-container,
 #js-pjax-container>div:first-child,
 div.org-repos>ul>li,
-.border-bottom {
+.border-bottom,
+div.repo-actions-hero + div > div > div > div > div.border-top, /* action page */
+.Subhead,
+.TimelineItem-break,
+article.markdown-body h1, /* MD */
+article.markdown-body h2,
+article.markdown-body img,
+li.table-list-item.member-list-item>div:first-child, /* member list */
+li.table-list-item.member-list-item>div:last-child {
 	border-radius: 0 !important;
 }
 
-.merge-message {
+.Box.rounded-2,
+nav.SideNav.border.rounded-1 {
+	border-radius: 3px !important;
+}
+
+.merge-message,
+.table-list-item:last-child,
+.member-listing-next,
+div#org-repositories>div>div>div.Box-footer {
 	border-top-left-radius: 0 !important;
 	border-top-right-radius: 0 !important;
 	border-bottom-left-radius: 3px !important;
 	border-bottom-right-radius: 3px !important;
+}
+
+.Box-header, .menu-heading,
+.comment-form-head, .timeline-comment-header,
+#org-members-table>div,
+div#org-repositories>div>div>div.Box-body {
+	border-bottom-left-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
 }
 
 .table-list-item:first-child .table-list-cell {
@@ -147,11 +171,6 @@ div.org-repos>ul>li,
 .table-list-item:last-child .table-list-cell {
 	border-bottom-left-radius: 3px !important;
 	border-bottom-right-radius: 3px !important;
-}
-
-.Box-header, .menu-heading {
-	border-bottom-left-radius: 0 !important;
-	border-bottom-right-radius: 0 !important;
 }
 
 div.rounded-1 {
@@ -168,7 +187,7 @@ div.merge-status-list {
 }
 
 /* navbar */
-main#js-repo-pjax-container>div:first-child {
+main>div:first-child {
 	box-shadow: inset 0 -1px 0 #e1e4e8;
 }
 
