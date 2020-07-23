@@ -191,6 +191,10 @@ main>div:first-child {
 	box-shadow: inset 0 -1px 0 #e1e4e8;
 }
 
+main>div:last-child {
+	box-shadow: none;
+}
+
 main>div>nav {
 	max-width: 1280px;
 	margin-left: auto;
