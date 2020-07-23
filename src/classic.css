@@ -62,7 +62,7 @@ div.TimelineItem-badge, span.TimelineItem-badge {
 }
 
 /* search PR */
-.subnav-item {
+.subnav-item, .UnderlineNav-item {
 	border-radius: 0 !important;
 }
 
@@ -123,8 +123,20 @@ tr.js-expandable-line,
 tr.js-expandable-line>td,
 tr.js-expandable-line>td>a,
 .discussion-timeline-actions,
-.discussion-sidebar-item {
+.discussion-sidebar-item,
+.application-main,
+#js-pjax-container,
+#js-pjax-container>div:first-child,
+div.org-repos>ul>li,
+.border-bottom {
 	border-radius: 0 !important;
+}
+
+.merge-message {
+	border-top-left-radius: 0 !important;
+	border-top-right-radius: 0 !important;
+	border-bottom-left-radius: 3px !important;
+	border-bottom-right-radius: 3px !important;
 }
 
 .table-list-item:first-child .table-list-cell {
@@ -156,7 +168,7 @@ div.merge-status-list {
 }
 
 /* navbar */
-main>div:first-child {
+main#js-repo-pjax-container>div:first-child {
 	box-shadow: inset 0 -1px 0 #e1e4e8;
 }
 
@@ -164,4 +176,15 @@ main>div>nav {
 	max-width: 1280px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+/* comment input */
+div.write-content>text-expander, div.write-content>text-expander>textarea {
+	border-bottom-left-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
+}
+
+div.write-content>label {
+	border-top-left-radius: 0 !important;
+	border-top-right-radius: 0 !important;
 }
