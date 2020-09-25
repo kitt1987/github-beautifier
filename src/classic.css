@@ -33,16 +33,16 @@ div.TimelineItem-badge, span.TimelineItem-badge {
 	border-radius: 3px !important;
 }
 
-.BtnGroup-parent, .BtnGroup-item {
+.BtnGroup-parent, .BtnGroup-item, .input-group>*, .input-group>*>* {
 	border-radius: 0 !important;
 }
 
-.BtnGroup-parent:first-child, .BtnGroup-item:first-child {
+.BtnGroup-parent:first-child, .BtnGroup-item:first-child, .input-group>*:first-child, .input-group>*:first-child>* {
     border-top-left-radius: 3px !important;
     border-bottom-left-radius: 3px !important;
 }
 
-.BtnGroup-parent:last-child, .BtnGroup-item:last-child {
+.BtnGroup-parent:last-child, .BtnGroup-item:last-child, .input-group>*:last-child, .input-group>*:last-child>* {
 	border-top-right-radius: 3px !important;
     border-bottom-right-radius: 3px !important;
 }
