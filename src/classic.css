@@ -24,8 +24,16 @@ span.mail-status,
 span.repo-language-color,
 span.discussion-item-icon,
 span.discussion-item-icon,
-div.TimelineItem-badge, span.TimelineItem-badge {
+div.TimelineItem-badge,
+span.TimelineItem-badge,
+span.feature-preview-indicator {
 	border-radius: 50% !important;
+}
+
+span.Counter {
+	--color-neutral-muted: var(--secondary);
+	--color-btn-counter-bg: var(--secondary);
+	border-radius: 2em !important;
 }
 
 /* button group */
@@ -188,7 +196,7 @@ div.merge-status-list {
 
 /* navbar */
 main>div:first-child {
-	box-shadow: inset 0 -1px 0 #e1e4e8;
+	box-shadow: inset 0 -1px 0 var(--color-border-muted);
 }
 
 main>div:last-child {
